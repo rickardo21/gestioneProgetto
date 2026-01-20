@@ -16,6 +16,31 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         setExpandedItem(expandedItem === item ? null : item);
     };
 
+    // Funzione per convertire il nome in URL valido (stessa logica del dropdown desktop)
+    const convertToUrl = (link: string): string => {
+        let urlPath = link
+            .toLowerCase()
+            .replace(/\s*\(.*?\)\s*/g, '') // Rimuovi contenuto tra parentesi
+            .replace(/\s*&\s*/g, '-') // Sostituisci & con -
+            .replace(/\s+/g, '-') // Sostituisci spazi con -
+            .replace(/[^\w-]/g, ''); // Rimuovi caratteri speciali
+
+        if (urlPath === "imposte-e-tasse") {
+            urlPath = "imposte-tasse";
+        }
+        if (urlPath === "imposte-dirette") {
+            urlPath = "imposte-tasse#imposte-dirette";
+        }
+        if (urlPath === "imposte-indirette") {
+            urlPath = "imposte-tasse#imposte-indirette";
+        }
+        if (urlPath === "tutti-i-temi") {
+            urlPath = "#features";
+        }
+
+        return "/" + urlPath;
+    };
+
     return (
         <>
             {/* Backdrop */}
@@ -72,7 +97,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                                                 {section.items.map((subItem, subIdx) => (
                                                     <li key={subIdx}>
                                                         <a
-                                                            href="#"
+                                                            href={convertToUrl(subItem)}
                                                             className="block p-2 text-sm text-gray-700 hover:bg-gray-50 rounded-md transition-colors"
                                                             onClick={onClose}
                                                         >
@@ -99,7 +124,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                                     {section.items.map((item, itemIdx) => (
                                         <li key={itemIdx}>
                                             <a
-                                                href="#"
+                                                href={convertToUrl(item)}
                                                 className="block p-2 text-sm text-gray-700 hover:bg-gray-50 rounded-md transition-colors"
                                                 onClick={onClose}
                                             >

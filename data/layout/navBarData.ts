@@ -1,14 +1,17 @@
 export const navData: Record<string, { title: string; items: string[] }[]> = {
     Macroeconomia: [
         { title: "Indicatori", items: ["Inflazione", "PIL (Prodotto Interno Lordo)"] },
-        { title: "Mercato", items: ["Domanda & Offerta"] },
     ],
-    Costi: [
-        { title: "Gestione", items: ["BEP (Break Even Point)", "Costi & Spese"] },
+    Analisi: [
+        { title: "Gestione", items: ["Costi & Spese"] },
+        { title: "BEP", items: ["BEP (Break Even Point)"] },
     ],
-    Fisco: [
+    Fiscalità: [
         { title: "Tributi", items: ["Imposte e Tasse"] },
         { title: "Classificazione", items: ["Imposte Dirette", "Imposte Indirette"] },
+    ],
+    Mercato: [
+        { title: "Mercato", items: ["Domanda & Offerta"] },
     ],
     default: [
         { title: "Esplora", items: ["Tutti i temi"] },
@@ -17,7 +20,8 @@ export const navData: Record<string, { title: string; items: string[] }[]> = {
 };
 export const navItems = [
     "Macroeconomia",
-    "Costi",
-    "Fisco",
+    "Analisi",
+    "Mercato",
+    "Fiscalità",
     "Esplora"
 ];

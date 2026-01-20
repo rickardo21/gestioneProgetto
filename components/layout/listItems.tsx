@@ -9,7 +9,7 @@ interface NavBarListItemsProps {
 
 const NavBarListItems: React.FC<NavBarListItemsProps> = ({ navItems, activeItem, handleMouseEnter }) => {
     return (
-        <ul className="flex-1 flex items-center justify-evenly px-60 h-full">
+        <ul className="flex-1 flex items-center justify-evenly px-40 h-full">
             {navItems.map((item) => (
                 <NavBarItems
                     key={item}
