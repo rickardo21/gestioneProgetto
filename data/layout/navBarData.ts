@@ -15,7 +15,7 @@ export const navData: Record<string, { title: string; items: string[] }[]> = {
     ],
     default: [
         { title: "Esplora", items: ["Tutti i temi"] },
-        { title: "Work in Progress", items: ["Work in Progress"] },
+        // { title: "Work in Progress", items: ["Work in Progress"] },
     ]
 };
 export const navItems = [
