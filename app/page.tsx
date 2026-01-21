@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer";
 import { ArrowRight, ChevronRight, TrendingUp, Building2, Scale } from "lucide-react";
 
 export default function Home() {
@@ -15,9 +16,9 @@ export default function Home() {
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
 
-                        <button className="text-[#0071e3] hover:text-[#0077ed] hover:underline px-6 py-3.5 rounded-full text-base font-medium transition-colors flex items-center gap-1">
+                        {/* <button className="text-[#0071e3] hover:text-[#0077ed] hover:underline px-6 py-3.5 rounded-full text-base font-medium transition-colors flex items-center gap-1">
                             Scopri di più <ChevronRight className="w-4 h-4" />
-                        </button>
+                        </button> */}
                     </div>
                 </div>
 
@@ -26,17 +27,7 @@ export default function Home() {
             </section>
 
 
-            {/* Footer */}
-            <footer className="py-12 px-6 border-t border-gray-200 bg-white">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs font-medium">
-                    <p>© 2026 EcoBase. Tutti i diritti riservati.</p>
-                    <div className="flex gap-8 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-gray-900 transition-colors">Termini di Servizio</a>
-                        <a href="#" className="hover:text-gray-900 transition-colors">Supporto</a>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 }

@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer";
 import { Scale, Landmark, FileText, Users, Building2, ShoppingBag, Home, Coins } from "lucide-react";
 
 export default function Imposte() {
@@ -340,17 +341,7 @@ export default function Imposte() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="py-12 px-6 border-t border-gray-200 bg-white">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs font-medium">
-                    <p>© 2026 EcoBase. Tutti i diritti riservati.</p>
-                    <div className="flex gap-8 mt-4 md:mt-0">
-                        <a href="/" className="hover:text-gray-900 transition-colors">Home</a>
-                        <a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-gray-900 transition-colors">Supporto</a>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 }
