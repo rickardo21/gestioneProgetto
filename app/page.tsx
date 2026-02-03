@@ -1,5 +1,4 @@
 import Footer from "@/components/layout/footer";
-import { ArrowRight, ChevronRight, TrendingUp, Building2, Scale } from "lucide-react";
 
 export default function Home() {
     return (

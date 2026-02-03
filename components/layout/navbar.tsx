@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Menu } from "lucide-react";
 import NavBarDropDownSection from "./dropDown";
 import NavBarListItems from "./listItems";
@@ -34,10 +34,31 @@ const LayoutNavBar = () => {
         ? navData[activeItem]
         : (activeItem ? navData.default : []);
 
+
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const navbarClasses = (isScrolled || isDropdownVisible)
+        ? "bg-white border-b border-gray-100"
+        : "bg-transparent border-transparent";
+
     return (
         <>
             <nav
-                className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-gray-100"
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md ${navbarClasses}`}
                 onMouseLeave={handleMouseLeave}
             >
                 <div className="relative z-50 max-w-[1024px] mx-auto px-4 h-[44px] flex items-center justify-between text-xs font-normal text-gray-900">

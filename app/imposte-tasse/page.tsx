@@ -5,11 +5,11 @@ export default function Imposte() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-linear-to-b from-slate-50 to-white">
                 <div className="z-10 px-4 space-y-6 max-w-5xl mx-auto mt-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full text-slate-700 text-sm font-semibold mb-4">
                         <Scale className="w-4 h-4" />
-                        Fisco
+                        Fiscalità
                     </div>
                     <h1 className="text-6xl md:text-8xl font-semibold tracking-tighter text-gray-900 leading-[1.05]">
                         Imposte e Tasse
@@ -35,7 +35,7 @@ export default function Imposte() {
                         sicurezza, welfare e servizi pubblici.
                     </p>
                     <p className="text-xl text-gray-600 leading-relaxed mb-6">
-                        Esistono diverse tipologie di imposte, ma la distinzione principale è tra <strong>imposte dirette</strong>
+                        Esistono diverse tipologie di imposte, ma la distinzione principale è tra <strong>imposte dirette </strong>
                         e <strong>imposte indirette</strong>.
                     </p>
                     <div className="bg-blue-50 rounded-3xl p-8 border border-blue-100 mt-8">

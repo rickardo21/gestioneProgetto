@@ -5,7 +5,7 @@ export default function PIL() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
+            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-linear-to-b from-indigo-50 to-white">
                 <div className="z-10 px-4 space-y-6 max-w-5xl mx-auto mt-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full text-indigo-700 text-sm font-semibold mb-4">
                         <BarChart3 className="w-4 h-4" />

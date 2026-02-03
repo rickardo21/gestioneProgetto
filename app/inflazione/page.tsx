@@ -5,7 +5,7 @@ export default function Inflazione() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-orange-50 to-white">
+            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-linear-to-b from-orange-50 to-white">
                 <div className="z-10 px-4 space-y-6 max-w-5xl mx-auto mt-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full text-orange-700 text-sm font-semibold mb-4">
                         <TrendingUp className="w-4 h-4" />
@@ -35,7 +35,7 @@ export default function Inflazione() {
                     </p>
                     <p className="text-xl text-gray-600 leading-relaxed">
                         L'inflazione viene misurata attraverso indici come l'<strong>IPC</strong> (Indice dei Prezzi al Consumo) che monitora
-                        l'andamento dei prezzi di un paniere di beni e servizi rappresentativi.
+                        l'andamento dei prezzi di un insieme di beni e servizi rappresentativi.
                     </p>
                 </div>
             </section>
@@ -126,13 +126,7 @@ export default function Inflazione() {
                                         <span className="text-gray-600"> Il valore reale dei risparmi diminuisce nel tempo</span>
                                     </div>
                                 </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-red-500 mt-2" />
-                                    <div>
-                                        <strong className="text-gray-900">Redistribuzione della ricchezza:</strong>
-                                        <span className="text-gray-600"> Favorisce i debitori a scapito dei creditori</span>
-                                    </div>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -157,20 +151,8 @@ export default function Inflazione() {
                                         <span className="text-gray-600"> Le imprese sono incentivate a investire in attività produttive</span>
                                     </div>
                                 </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-green-500 mt-2" />
-                                    <div>
-                                        <strong className="text-gray-900">Riduce il peso del debito:</strong>
-                                        <span className="text-gray-600"> Il valore reale dei debiti diminuisce nel tempo</span>
-                                    </div>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-green-500 mt-2" />
-                                    <div>
-                                        <strong className="text-gray-900">Segnale di crescita:</strong>
-                                        <span className="text-gray-600"> Un'inflazione del 2% è considerata sana dalle banche centrali</span>
-                                    </div>
-                                </li>
+
+
                             </ul>
                         </div>
                     </div>
@@ -184,7 +166,7 @@ export default function Inflazione() {
                     <div className="bg-white rounded-3xl p-10 shadow-sm">
                         <p className="text-xl text-gray-600 leading-relaxed mb-8">
                             L'inflazione viene misurata principalmente attraverso l'<strong>Indice dei Prezzi al Consumo (IPC)</strong>,
-                            che monitora l'andamento dei prezzi di un paniere rappresentativo di beni e servizi.
+                            che monitora l'andamento dei prezzi di un insieme rappresentativo di beni e servizi.
                         </p>
                         <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
                             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Formula del tasso di inflazione:</h3>
@@ -253,7 +235,7 @@ export default function Inflazione() {
                 </div>
             </section>
 
-           <Footer />
+            <Footer />
         </div>
     );
 }

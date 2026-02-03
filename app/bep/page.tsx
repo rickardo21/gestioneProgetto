@@ -1,15 +1,15 @@
 import Footer from "@/components/layout/footer";
-import { Target, TrendingUp, AlertTriangle, CheckCircle, DollarSign, Package } from "lucide-react";
+import { Wallet, Target, TrendingUp, AlertTriangle, CheckCircle, Package } from "lucide-react";
 
 export default function BEP() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-emerald-50 to-white">
+            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-linear-to-b from-emerald-50 to-white">
                 <div className="z-10 px-4 space-y-6 max-w-5xl mx-auto mt-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 rounded-full text-emerald-700 text-sm font-semibold mb-4">
-                        <Target className="w-4 h-4" />
-                        Business
+                        <Wallet className="w-4 h-4" />
+                        Analisi
                     </div>
                     <h1 className="text-6xl md:text-8xl font-semibold tracking-tighter text-gray-900 leading-[1.05]">
                         BEP
@@ -190,7 +190,7 @@ export default function BEP() {
                         <h2 className="text-5xl font-semibold tracking-tight text-gray-900 mb-6">Come si calcola il BEP?</h2>
                     </div>
 
-                    <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-10 border border-emerald-100">
+                    <div className="bg-linear-to-br from-emerald-50 to-teal-50 rounded-3xl p-10 border border-emerald-100">
                         <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Formula del Break Even Point (in quantità)</h3>
 
                         <div className="bg-white rounded-2xl p-8 border border-emerald-200 mb-8">
@@ -228,7 +228,7 @@ export default function BEP() {
                                         <p>BEP = 10.000€ / 20€ = <strong>500 unità</strong></p>
                                         <div className="mt-4 p-4 bg-white rounded-lg border border-emerald-300">
                                             <p className="text-sm">
-                                                <strong>Risultato:</strong> L'impresa deve vendere <strong className="text-emerald-600">500 unità</strong>
+                                                <strong>Risultato:</strong> L'impresa deve vendere <strong className="text-emerald-600">500 unità </strong>
                                                 al mese per coprire tutti i costi.
                                             </p>
                                         </div>

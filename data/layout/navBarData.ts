@@ -8,7 +8,7 @@ export const navData: Record<string, { title: string; items: string[] }[]> = {
     ],
     Fiscalità: [
         { title: "Tributi", items: ["Imposte e Tasse"] },
-        { title: "Classificazione", items: ["Imposte Dirette", "Imposte Indirette"] },
+
     ],
     Mercato: [
         { title: "Mercato", items: ["Domanda & Offerta"] },

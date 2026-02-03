@@ -1,15 +1,15 @@
 import Footer from "@/components/layout/footer";
-import { Scale, TrendingUp, TrendingDown, Target, ArrowRight, Activity } from "lucide-react";
+import { TrendingUp, TrendingDown, Target, ArrowRight, Activity, ShoppingBag } from "lucide-react";
 
 export default function DomandaOfferta() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-purple-50 to-white">
+            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-linear-to-b from-purple-50 to-white">
                 <div className="z-10 px-4 space-y-6 max-w-5xl mx-auto mt-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full text-purple-700 text-sm font-semibold mb-4">
-                        <Scale className="w-4 h-4" />
-                        Macroeconomia
+                        <ShoppingBag className="w-4 h-4" />
+                        Mercato
                     </div>
                     <h1 className="text-6xl md:text-8xl font-semibold tracking-tighter text-gray-900 leading-[1.05]">
                         Domanda e Offerta
@@ -155,7 +155,7 @@ export default function DomandaOfferta() {
                         </p>
                     </div>
 
-                    <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-10 border border-purple-100">
+                    <div className="bg-linear-to-br from-purple-50 to-pink-50 rounded-3xl p-10 border border-purple-100">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                             <div className="bg-white rounded-2xl p-6">
                                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Al punto di equilibrio:</h3>

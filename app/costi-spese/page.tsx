@@ -5,11 +5,11 @@ export default function Costi() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-amber-50 to-white">
+            <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden bg-linear-to-b from-amber-50 to-white">
                 <div className="z-10 px-4 space-y-6 max-w-5xl mx-auto mt-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 rounded-full text-amber-700 text-sm font-semibold mb-4">
                         <Wallet className="w-4 h-4" />
-                        Business
+                        Analisi
                     </div>
                     <h1 className="text-6xl md:text-8xl font-semibold tracking-tighter text-gray-900 leading-[1.05]">
                         Costi e Spese
@@ -132,7 +132,7 @@ export default function Costi() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                         {/* Costi Fissi */}
-                        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-10 border border-blue-100">
+                        <div className="bg-linear-to-br from-blue-50 to-indigo-50 rounded-3xl p-10 border border-blue-100">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center">
                                     <Package className="w-6 h-6 text-white" />
@@ -180,7 +180,7 @@ export default function Costi() {
                         </div>
 
                         {/* Costi Variabili */}
-                        <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-10 border border-orange-100">
+                        <div className="bg-linear-to-br from-orange-50 to-red-50 rounded-3xl p-10 border border-orange-100">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center">
                                     <TrendingDown className="w-6 h-6 text-white" />
@@ -229,7 +229,7 @@ export default function Costi() {
                     </div>
 
                     {/* Costi Totali */}
-                    <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-10 border border-purple-100">
+                    <div className="bg-linear-to-br from-purple-50 to-pink-50 rounded-3xl p-10 border border-purple-100">
                         <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Costi Totali</h3>
                         <div className="bg-white rounded-2xl p-8 border border-purple-200">
                             <div className="font-mono text-3xl text-center text-gray-900 mb-6">
